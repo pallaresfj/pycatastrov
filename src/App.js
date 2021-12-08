@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar'
+import Inicio from './components/Inicio'
+import Login from './components/Login'
+import Registro from './components/Registro'
+import Contacto from './components/Contacto'
+import MisPredios from './components/MisPredios'
+import MisRecibos from './components/MisRecibos'
+import Cobros from './components/Cobros'
+import Predios from './components/Predios'
+import SolicitudConv from './components/SolicitudConv'
+import UsuarioNew from './components/UsuarioNew'
+import Usuarios from './components/Usuarios'
+import Footer from './components/Footer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Inicio />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/registro" element={<Registro />} />
+        <Route exact path="/contacto" element={<Contacto />} />
+        <Route exact path="/mispredios" element={<MisPredios />} />
+        <Route exact path="/misrecibos" element={<MisRecibos />} />
+        <Route exact path="/cobros" element={<Cobros />} />
+        <Route exact path="/predios" element={<Predios />} />
+        <Route exact path="/solicitudconv" element={<SolicitudConv />} />
+        <Route exact path="/usuarionew" element={<UsuarioNew />} />
+        <Route exact path="/usuarios" element={<Usuarios />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

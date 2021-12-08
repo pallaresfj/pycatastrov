@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# catastrovalledupar
+Proyecto del Ciclo 4 de la formación Misión TIC 2021 con la Universidad del Norte de Barranquilla.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DESARROLLO_DE_APLICACIONES_WEB_8888001240_IST1047_10
+# EQUIPO # 10
 
-## Available Scripts
+1.	Fernely Torres Mora
+2.	Francisco Pallares De La Hoz
+3.	Libia Benitez Ramos
+4.	Nicolás Guzmán Arenas
+5.	Sergio Tapia Consuegra
 
-In the project directory, you can run:
+# Plataforma Gestión Catastral
 
-### `npm start`
+Actualmente la Gobernación del Cesar realiza de forma manual el cobro catastral de los predios de la ciudad de Valledupar. Por este motivo la Gobernación del Cesar lo contacta a usted y su equipo con el fin de crear una plataforma que les permita gestionar el cobro catastral de los predios de la ciudad correspondiente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Los tipos de usuarios que debe manejar el sistema son administrador, usuario externo y usuario interno.
+Un usuario interno deberá estar en la capacidad de:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Crear predio indicando el código, nombre del propietario, cédula del propietario, área total del predio, área construida del predio, dirección y barrio.
+- Ejecutar un algoritmo que genere los cobros anuales de todos los predios registrados.
+- Gestionar predio (cambiar dueño del predio).
+- Definir la fecha de pago máxima en un año.
+-	Definir la fecha de pago máxima para tener un descuento y definir el descuento.
+-	Ejecutar un algoritmo que genere multas sobre los predios que no realizaron el pago en un tiempo determinado.
+-	Aprobar/reprobar convenio de pago.
 
-### `npm test`
+Un usuario externo debe estar en la capacidad de:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-	Registrarse en la plataforma.
+-	Asociar predios a la cuenta dado el código (será posible si el predio está a nombre del usuario).
+-	Realizar pago del valor predial. (Simular)
+-	Solicitar convenio de pago dado un cobro generado (pago por fuera de la fecha máxima).
 
-### `npm run build`
+Un administrador se encarga de gestionar los usuarios internos y además ejerce control total de la plataforma.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Notas:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-	Los datos suministrados por los usuarios deben cumplir la política de privacidad de datos vigente, es decir las contraseñas de los usuarios deben almacenarse de forma cifrada y la conexión al servidor debe realizarse de forma segura.
+-	La base de datos debe ser no relacional.
+-	Se debe utilizar una arquitectura desacoplada, es decir, una API back end y un front end que consuma dicha API.
+-	La API back end debe estar desarrollada en Express.js
+-	El front end debe estar desarrollado en React.js
+-	Se debe utilizar Bootstrap como librería CSS para manejar los estilos de su aplicación.
