@@ -8,7 +8,6 @@ import MisRecibos from './components/MisRecibos'
 import Cobros from './components/Cobros'
 import Predios from './components/Predios'
 import SolicitudConv from './components/SolicitudConv'
-import UsuarioNew from './components/UsuarioNew'
 import Usuarios from './components/Usuarios'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -27,7 +26,6 @@ function App() {
         <Route exact path="/cobros" element={<Cobros />} />
         <Route exact path="/predios" element={<Predios />} />
         <Route exact path="/solicitudconv" element={<SolicitudConv />} />
-        <Route exact path="/usuarionew" element={<UsuarioNew />} />
         <Route exact path="/usuarios" element={<Usuarios />} />
       </Routes>
       <Footer />

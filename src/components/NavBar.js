@@ -82,11 +82,6 @@ function NavBar() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="dropdown-item" to="/usuarionew">
-                                            Prueba usuario
-                                        </Link>
-                                    </li>
-                                    <li>
                                         <Link className="dropdown-item" to="/solicitudconv">
                                             Prueba Solicitud    
                                         </Link>
