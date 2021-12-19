@@ -1,11 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import {
-    Table,
     Label,
     Input,
     Button,
-    Container,
     Modal,
     ModalHeader,
     ModalBody,
@@ -62,7 +59,7 @@ class Usuarios extends React.Component {
         var contador = 0;
         var arreglo = this.state.data;
         arreglo.map((registro) => {
-            if (dato._id == registro._id) {
+            if (dato._id === registro._id) {
                 arreglo[contador].correo = dato.correo;
                 arreglo[contador].password = dato.password;
                 arreglo[contador].nombre = dato.nombre;
@@ -76,11 +73,11 @@ class Usuarios extends React.Component {
 
     eliminar = (dato) => {
         var opcion = window.confirm("¿Está seguro que desea eliminar a " + dato.nombre + "?");
-        if (opcion == true) {
+        if (opcion === true) {
             var contador = 0;
             var arreglo = this.state.data;
             arreglo.map((registro) => {
-                if (dato._id == registro._id) {
+                if (dato._id === registro._id) {
                     arreglo.splice(contador, 1);
                 }
                 contador++;
